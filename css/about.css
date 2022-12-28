@@ -1,0 +1,145 @@
+.aboutMainContainer {
+    width: 100%;
+    min-height: calc(100vh - 75px);
+    padding: 50px;
+}
+
+.aboutDescriptionContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #89C4E1;
+    box-shadow: 5px 5px 5px 0px #89C4E1;
+}
+
+.aboutDescriptionImg {
+    display: flex;
+}
+
+.aboutDescriptionImg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.marginTop20 {
+    margin-top: 10px;
+}
+
+.aboutInfosContainer {
+    margin: 20px 0px;
+    display: flex;
+    gap: 20px;
+    background-color: #89C4E1;
+    box-shadow: 5px 5px 5px 0px #89C4E1;
+}
+
+.aboutInfosLeftContainer {
+    width: 160px;
+    min-height: 300px;
+}
+
+.aboutInfosRightContainer {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.aboutInfosLeftItemContainer {
+    display: flex;
+    gap: 5px;
+    padding: 10px 15px;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.aboutInfosLeftItemContainer span {
+    font-size: 18px;
+}
+
+.projectCardsMainContainer {
+    max-width: 75%;
+    display: flex;
+    gap: 20px;
+}
+
+.simpleProjectCardContainer {
+    width: 200px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.simpleProjectCardImgContainer {
+    width: 200px;
+    height: 200px;
+}
+
+.simpleProjectCardImgContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.simpleProjectCardTitle {
+    padding: 10px;
+}
+
+.simpleProjectCardDescription {
+    padding: 10px;
+}
+
+.simpleProjectCardLinkContainer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.simpleProjectCardLinkContainer a {
+    text-decoration: none;
+    border: 1px solid #144272;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: #144272;
+    transition: all 0.4s linear;
+}
+
+.simpleProjectCardLinkContainer a:hover {
+    background-color: #144272;
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width:1200px) {
+    .aboutMainContainer {
+        padding: 50px 200px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .aboutDescriptionContainer {
+        flex-direction: column;
+    }
+
+    .aboutDescriptionContainer h3,
+    .aboutDescriptionContainer h4 {
+        text-align: center;
+    }
+    .aboutInfosContainer{
+        flex-direction: column-reverse;
+    }
+    .aboutInfosLeftContainer{
+        width: 100%;
+        min-height: 0px;
+    }
+    .aboutInfosRightContainer{
+        width: 100%;
+    }
+
+}
