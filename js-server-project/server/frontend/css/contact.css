@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.mainContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#contactForm {
+    width: 50%;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.formRow label {
+    color: #777;
+
+}
+
+.formRow input,
+.formRow textarea {
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.formRow input:focus,
+.formRow textarea:focus {
+    outline: none;
+    border: 1px solid rgb(32, 195, 245);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.submitBtnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtnActive {
+    border: none;
+    padding: 8px 40px;
+    background-color: rgb(32, 195, 245);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submitBtnActive:hover {
+    border-radius: 25px;
+    padding: 8px 70px;
+    box-shadow: 0px 0px 10px 0px rgb(32, 195, 245);
+}
+
+.submitBtnDisabled {
+    border: none;
+    padding: 8px 40px;
+    background-color: rgb(125, 131, 133);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.inputError {
+    font-size: 12px;
+    color: orangered;
+}
+
+#responseContainer {
+    display: none;
+
+}
+
+.responseSuccess {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 30px 50px;
+    background-color: rgb(32, 195, 245);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.responseFail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 30px 50px;
+    background-color: rgb(236, 12, 12);
+    border-radius: 15px;
+    color: #fff;
+}
+
+#responseText {
+    text-align: center;
+    line-height: 26px;
+}
